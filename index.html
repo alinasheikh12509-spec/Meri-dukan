@@ -37,4 +37,20 @@
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Product 3">
+      <h3>Stylish Shoes</h3>
+      <p>Aramdeh aur mazboot shoes. Roz ke liye best.</p>
+      <p class="price">Rs. 2200</p>
+      <button class="btn" onclick="order('Stylish Shoes', 2200)">Order Karein</button>
+    </div>
+  </div>
+
+  <script>
+    function order(name, price) {
+      let number = "923228241585";
+      let msg = `Salam! Mujhe ye product chahiye:%0A%0AProduct: ${name}%0APrice: Rs. ${price}`;
+      window.open(`https://wa.me/${number}?text=${msg}`, '_blank');
+    }
+  </script>
+</body>
+</html>
